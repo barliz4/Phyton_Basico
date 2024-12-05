@@ -1,5 +1,7 @@
-def saludar():
-    print("¡Hola, mundo!")
+def saludar(nombre):
+    print(f"¡Hola, {nombre}!")
+
+usuario = input ("Ingrese su nombre en la consola: ")
 
 # Llamar a la función
-saludar()  # Imprime "¡Hola, mundo!"
+saludar(usuario)  # Imprime "¡Hola, y el nombre de usuario!"
