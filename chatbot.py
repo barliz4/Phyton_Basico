@@ -1,10 +1,11 @@
-preguntas = {
-    "hola":"hola como estás",
-    "bien y tu":"también muy bien",
-    "tiene cursos de programacion":"si",
-    "donde estan ubicados":"en la ciudad de bucaramanga"
-}
+import csv 
 
+preguntas = {}
+
+with open ("datoschat.csv", "r") as archivo:
+    lector = csv.DictReader (archivo)
+    for fila in lector:
+       preguntas [fila ["preguntas"]] = fila ["respuestas"]
 
 def respuestas (pregunta):
     if pregunta in preguntas:
