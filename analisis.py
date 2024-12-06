@@ -8,4 +8,7 @@ import pandas as pd
 df = pd.read_csv("poblacion.csv")
 
 df.to_csv("poblacion.csv")
-print(df.tail(5))
+print(df.tail(5))       #Funciones como = head, tail, info, escribe
+
+df ["nuevopais"] = df ["COL"] + 200
+df.head ()
